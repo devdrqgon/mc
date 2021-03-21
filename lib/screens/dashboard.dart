@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mc/common/widgets/customcard/background.dart';
 import 'package:mc/common/widgets/customcard/custom-cards-container.dart';
 import 'package:mc/common/widgets/customcard/model.dart';
+import 'package:mc/common/widgets/customcard/new_background.dart';
 
 class DashboardScreen extends StatelessWidget {
   final List<CustomCardData> input = [
@@ -13,7 +13,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Background(
+      body: BaseLayout(
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.start,
           children: [
